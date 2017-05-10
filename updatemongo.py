@@ -132,7 +132,6 @@ def insert(data):
 def serialize(obj):
     if isinstance(obj, datetime):
         serial = obj.isoformat()
-        print serial
         return serial
     else:
         return obj
