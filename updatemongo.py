@@ -36,7 +36,6 @@ import uuid
 import dateutil.parser as dateparser
 from datetime import datetime
 from pymongo import MongoClient
-from datetime import datetime
 
 dbname = ''
 colname = ''
