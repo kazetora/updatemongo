@@ -137,7 +137,6 @@ def serialize(obj):
         return obj
 
 def out2csv(dbname, colname, query, savefile = None):
-    print dbname, colname, query
     client = MongoClient()
     db = client[dbname]
     if not savefile:
