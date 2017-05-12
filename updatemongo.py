@@ -123,7 +123,7 @@ def insert(data):
     for d in newdata:
         f = db[colname].find_one({validationifield:d[validationifield]})
         if f is not None:
-            db[colname].update({validationifield:d[validationifield]}, d)
+            db[colname].update({validationifield:d[validationifield]}, {"$set":d})
         else:
             db[colname].insert(d)
             
